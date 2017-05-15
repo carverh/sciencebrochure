@@ -2,28 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Cambrian</title>
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/vis/dist/vis.min.css">
-    <link rel="stylesheet" href="site.css">
-
-    <script data-main="main" src="require.js"></script>
+    <title>Cambrian Period</title>
+    <script src="app.js" charset="utf-8"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Header -->
+    <div class="container">
+      <div class="row" id="github-actions">
+        <div class="col-md-12">
+          <a class="github-button" href="https://github.com/carverh/sciencebrochure/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download carverh/sciencebrochure on GitHub">Download</a>
+          <a class="github-button" href="https://github.com/carverh/sciencebrochure" data-icon="octicon-star" data-show-count="true" aria-label="Star carverh/sciencebrochure on GitHub">Star</a>
+          <a class="github-button" href="https://github.com/carverh/sciencebrochure/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork carverh/sciencebrochure on GitHub">Fork</a>
+        </div>
+      </div>
+
+      <div class="row" id="title">
         <div class="col-md-12">
           <div class="text-center">
             <h1 class="display-3">Cambrian Period</h1>
+            <p class="lead">By Carver, Max and Evan</p>
           </div>
         </div>
       </div>
-      <div class="row">
 
-        <!-- Enviorment -->
+      <div class="row" id="info">
         <div class="col-md-4 tile" id="enviorment">
           <h3 class="text-center">Enviorment</h3>
           <ul>
@@ -58,17 +60,27 @@
           </ul>
         </div>
       </div>
+      <div class="row" id="thumbnails">
+        <div class="col-md-12">
+          <a href="images/pangea.png" data-lightbox="pangea" data-title="Pangea supercontinent">
+            <img src="images/pangea.png" alt="Pangea" class="img-thumbnail sb-thumbnail">
+          </a>
+          <a href="images/trilobite2.jpg" data-lightbox="trilobite" data-title="Trilobite Animal">
+            <img src="images/trilobite2.jpg" alt="Trilobite" class="img-thumbnail sb-thumbnail">
+          </a>
+          <a href="images/backpack.jpg" data-lightbox="backpack" data-title="You will have to bring a backpack because you will have to walk a lot">
+            <img src="images/backpack.jpg" alt="Backpack" class="img-thumbnail sb-thumbnail">
+          </a>
+          <a href="images/hills2.jpg" data-lightbox="hills" data-title="Hills forming into mountains">
+            <img src="images/hills2.jpg" alt="Hills" class="img-thumbnail sb-thumbnail">
+          </a>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-md-4" style="height:300px; background: url(images/pangea.png) no-repeat;-webkit-background-size: cover"></div>
-        <div class="col-md-4" style="height:300px; background: url(images/trilobite2.jpg) no-repeat;-webkit-background-size: cover"></div>
-        <div class="col-md-4" style="height:300px; background: url(images/backpack.jpg) no-repeat;-webkit-background-size: cover"></div>
+        <div class="col-md-12">
+          <div id="timeline"></div>
+        </div>
       </div>
     </div>
-
-    <!-- Timeline -->
-    <div id="timeline"></div>
-
-    <!-- Hills image -->
-    <div class="hills"></div>
   </body>
 </html>

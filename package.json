@@ -1,0 +1,30 @@
+{
+  "name": "sciencebrochure",
+  "version": "1.0.0",
+  "description": "Brochure for Science",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t node-lessify src/index.js > app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carverh/sciencebrochure.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carverh/sciencebrochure/issues"
+  },
+  "homepage": "https://github.com/carverh/sciencebrochure#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "lightbox2": "^2.9.0",
+    "vis": "^4.19.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "node-lessify": "^0.1.5"
+  }
+}
